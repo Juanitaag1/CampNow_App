@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+    <meta name="description" content="Favorite Gardens List jQuery Mobile">
+    <meta name="Juanita Aguilar" content="CampNow">
+	  <link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="themes/Main.css"/>
+      <title>CampNow</title>
+	    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img.fullscreen{width:100%;}
+        img.thumbnail{width:15%;}
+		  img.halfscreen{width:50%;}
+    </style>
+</head>
+	<body>
+		<!-- home page -->
+<div data-role="page" id="home" data-add-back-btn="true" class="Page_Div"> 
+	
+<header data-role="header" class="Main_Header">
+   	 <!-- <div id="choisir_ville" data-role="page" data-add-back-btn="true">-->
+	<div class="Main_Header">
+		 <a data-role="button" data-rel="back" href="#home" id="Back_Btn">Back</a>
+	<h1 align="center" class="Main_Title">CAMPNOW</h1>
+   </div>
+
+	
+</header>
+	<article data-role="content">
+		<h2>Results</h2>
+		<div><img src="images/Screenshot (43).png" alt="Map of Leaveworth KOA" class="halfscreen"></div>
+		<p><a href="#ListOFCampgrounds" id="List_Link" >List</a></p>
+		
+</article>
+
+<footer data-role="footer" data-position="fixed" class="Main_Header">
+    <nav data-role="navbar" >
+        <ul >
+		<li ><a href="#home" data-icon="home" style="background-color:#EDCDAE ">Home</a></li>
+		<!--<li><a href="#photos" data-icon="grid">Photos</a></li>-->
+	<!--	<li><a href="#info" data-icon="info">Info</a></li>-->
+			
+			<li><a href="#info" data-icon="gear" style="background-color:#EDCDAE ">Settings</a></li>
+        </ul>
+    </nav>
+</footer>
+</div> <!-- end of home page -->
+        
+	<!-- List of Campgrounds page -->
+<div data-role="page" id="ListOFCampgrounds" data-add-back-btn="true">   
+<header data-role="header" >
+   	 <!-- <div id="choisir_ville" data-role="page" data-add-back-btn="true">-->
+	<div class="Main_Header">
+		 <a data-role="button" data-rel="back" href="#home" id="Back_Btn_CampGList">Back</a>
+	<h1 align="center" class="Main_Title">CAMPNOW</h1>
+   </div>
+
+	
+</header>
+	<article data-role="content">
+       <ul data-role="listview" data-filter="true">
+        <li>
+            <a href="#KOAdetails">
+            <h1>Leavenworth / Pine Village KOA</h1>
+            <img class="thumbnail" src="https://koa.com/content/campgrounds/leavenworth/photos/ecb7c3e7-01f8-4c82-9572-056ffdb6a7edphoto6b716ddf-2646-4d5b-af8d-5e93d3da3020.jpg.axd?preset=coverphoto1" alt="KOA image" />
+            <p>Located in close to Lake Wenatchee and the town of Leavenworth</p>
+            </a>
+      </li>
+   </ul>
+</article>
+
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+		<li><a href="#home" data-icon="home" style="background-color:#EDCDAE">Home</a></li>	
+			<li><a href="#info" data-icon="gear" style="background-color:#EDCDAE" >Settings</a></li>
+        </ul>
+    </nav>
+</footer>
+</div> <!-- end List of Campgrounds page -->
+        
+<!-- KOA details page -->
+<div data-role="page" id="KOAdetails" data-add-back-btn="true">   
+<header data-role="header">
+   	 <!-- <div id="choisir_ville" data-role="page" data-add-back-btn="true">-->
+	<div class="Main_Header">
+		 <a data-role="button" data-rel="back" href="#ListOfCampgrounds" id="Back_Btn_CampDetails">Back</a>
+	<h1 align="center" class="Main_Title">CAMPNOW</h1>
+   </div>
+<!--Grid a-->
+	<div class="ui-grid-a" id="KOA_infos">	
+		<div>
+		<h2> Leavenworth / Pine Village KOA</h2>
+		<p class="Description">  Beautiful campground near Lake Wenacthee and Leavenworth 
+			</p>
+		<p> Details: </p>
+		<!--	<ul> -->
+				<li><a href="(555)555-5555"  data-role="button" data-icon="tel"> Call us </a></li>
+				<li> <a href="https://koa.com/campgrounds/leavenworth/"  data-role="button" data-icon="tel" rel="external"> See our website</a></li>
+				<li><a href="https://koa.com/campgrounds/leavenworth/"  data-role="button" data-icon="tel"> Address: <br>11401 Riverbend Drive Leavenworth,<br> WA 98826 </a> </li>
+		<!--	</ul>	-->		
+		</div>		
+		<div class="ui-block-b">
+		<p><img src="images/Screenshot (43).png" class="fullscreen" alt=" map of KOA"/></p>
+		
+		</div>
+	</div><!-- /grid-a -->
+	<hr/>
+		
+</header>
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+		<li><a href="#home" data-icon="home" style="background-color:#EDCDAE" >Home</a></li>
+			<li><a href="#info" data-icon="gear" style="background-color:#EDCDAE">Settings</a></li>
+        </ul>
+    </nav>
+</footer>
+</div> <!-- home page -->
+        
+
+</body>
+</html>

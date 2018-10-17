@@ -1,0 +1,62 @@
+/* CSS Document */
+/*Colors*/
+/*#5C6464 dark grey*/
+/*#BCB434  moss green*/
+/*#C47C43 brown-orange*/
+/*#EBD38A light tan*/
+/*#946C54 dark brown*/
+
+h1.Main_Title {
+    color: #578037;
+}
+.Main_Header{
+	background-color:#EDCDAE;/*#EBD38A*/
+	border: 2px thick;
+	border-color: #946C54;
+	
+}
+#Header{
+	background-color:#EDCDAE;
+}
+.Page_Div{
+	border: #946C54
+}
+#Back_Btn{
+		background-color: #578037;
+	color:black;
+
+
+}
+#Back_Btn:hover{
+		 background-color: #BCB434; /* Green */
+    color: black;
+}
+#Back_Btn_CampGList{
+		background-color: #578037;
+	color:black;
+}
+#Back_Btn_CampGList:hover{
+	 background-color: #BCB434; /* Green */
+    color: black;
+}
+	#Back_Btn_CampDetails{
+		background-color: #578037;
+	color:black;
+}
+#Back_Btn_CampDetails:hover{
+	 background-color: #BCB434; /* Green */
+    color: black;
+}
+
+#List_Link{
+	color: #578037;
+}
+#List_Link:active{
+	color: #578037;
+}
+#List_Link:hover{
+	color: #BCB434;
+}
+.Description{
+	color: #578037;
+}
